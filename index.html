@@ -1,81 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ScriptGuild — Home</title>
-  <link rel="icon" href="images/icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/index.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScriptGuild — Software Development Team</title>
+<meta name="description" content="ScriptGuild is a small software development team crafting games and websites.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="/" class="nav-logo">Script<span>Guild</span></a>
-    <div class="nav-toggle" onclick="toggleNav()" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="/" class="active">home</a></li>
-      <li><a href="about" class="">about</a></li>
-      <li><a href="projects" class="">projects</a></li>
-      <li><a href="join" class="">join</a></li>
-      <li><a href="contact" class="">contact</a></li>
-    </ul>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <a href="#top" class="brand">
+    <span class="seal" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="30" height="30">
+        <polygon points="50,4 91,27 91,73 50,96 9,73 9,27" fill="none" stroke="currentColor" stroke-width="3"/>
+        <polygon points="50,22 76,36.5 76,63.5 50,78 24,63.5 24,36.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+        <path d="M40 44 L36 50 L40 56 M60 44 L64 50 L60 56 M53 41 L47 59" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    <span class="brand-name">ScriptGuild</span>
+  </a>
+  <nav class="site-nav">
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <main>
-    
-<section class="hero">
-  <div class="hero-orb"></div>
-  <div class="hero-orb2"></div>
-  <div class="hero-inner">
-    <div class="hero-eyebrow fade-up">SCRIPTGUILD · EST. 2023</div>
-    <h1 class="fade-up delay-1">We write code that<br><em>helps</em> people.</h1>
-    <p class="hero-sub fade-up delay-2">
-      ScriptGuild is a volunteer-driven org of developers building real tools, apps, and games for people who need them.
-    </p>
-    <div class="hero-cta fade-up delay-3">
-      <a href="/projects" class="btn btn-primary">→ See Our Projects</a>
-      <a href="/join" class="btn btn-outline">Join the Guild</a>
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">software development team</p>
+      <h1>We build things<br>worth shipping.</h1>
+      <p class="hero-sub">ScriptGuild is a small guild of developers making games and websites, one script at a time.</p>
+      <a href="#work" class="btn">See our work<span class="btn-arrow">↓</span></a>
+    </div>
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="0 0 300 300" class="emblem-svg">
+        <polygon class="ring ring-1" points="150,20 269,85 269,215 150,280 31,215 31,85" fill="none" stroke="currentColor" stroke-width="1"/>
+        <polygon class="ring ring-2" points="150,60 233,105 233,195 150,240 67,195 67,105" fill="none" stroke="currentColor" stroke-width="1"/>
+        <polygon class="ring ring-3" points="150,100 197,125 197,175 150,200 103,175 103,125" fill="none" stroke="currentColor" stroke-width="1"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="eyebrow">the ledger</p>
+      <h2>Our work</h2>
     </div>
 
-    <div class="stats-row fade-up delay-4">
-      <div class="stat">
-        <span class="stat-num">2023</span>
-        <span class="stat-label">Year Founded</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">3</span>
-        <span class="stat-label">Active Divisions</span>
+    <div class="category">
+      <h3 class="category-title"><span class="tag">GAMES</span></h3>
+      <div class="cards">
+        <a class="card" href="https://chronoversa-games.itch.io/snack-snake" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <h4>Snack Snake</h4>
+            <span class="card-arrow">↗</span>
+          </div>
+          <p>Slither, munch, and grow—alone or with a friend! Control your snake, eat apples, and avoid crashing into walls, yourself, or the other player. Play solo or challenge a friend in 2-player mode and see who can grow the longest.</p>
+          <span class="card-link-label">itch.io ↗</span>
+        </a>
       </div>
     </div>
+
+    <div class="category">
+      <h3 class="category-title"><span class="tag">WEBSITES</span></h3>
+      <div class="cards">
+        <a class="card" href="https://scriptguild.github.io/MedicaVista" target="_blank" rel="noopener noreferrer">
+          <div class="card-top">
+            <h4>MedicaVista</h4>
+            <span class="card-arrow">↗</span>
+          </div>
+          <p>MedicaVista provides accessible medical information to help people better understand health, medicine, and healthcare.</p>
+          <span class="card-link-label">scriptguild.github.io ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <p class="eyebrow">reach us</p>
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-block main-contact">
+        <p class="contact-label">General inquiries</p>
+        <a class="contact-email" href="mailto:contact@scriptguild.xyz">contact@scriptguild.xyz</a>
+      </div>
+
+      <div class="contact-block">
+        <p class="contact-label">Business, donations &amp; other inquiries</p>
+        <p class="contact-note">Reach out to any of us directly:</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-name">Kent Lee</span>
+            <a href="mailto:kentlee@scriptguild.xyz">kentlee@scriptguild.xyz</a>
+            <span class="contact-discord">Discord: @synthfax</span>
+          </li>
+          <li>
+            <span class="contact-name">RGBcat</span>
+            <a href="mailto:rgbcat@scriptguild.xyz">rgbcat@scriptguild.xyz</a>
+            <span class="contact-discord">Discord: @rgb_catt</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="socials" aria-label="Social media links">
+    <a href="https://facebook.com/scriptguild" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+    </a>
+    <a href="https://instagram.com/scriptguild" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2.2c2.7 0 3 .01 4.1.06 1 .05 1.6.2 1.9.35.5.19.85.42 1.23.79.37.38.6.72.79 1.22.15.35.3.94.35 1.9.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1-.2 1.6-.35 1.9-.19.5-.42.85-.79 1.23-.38.37-.72.6-1.22.79-.35.15-.94.3-1.9.35-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1-.05-1.6-.2-1.9-.35a3.3 3.3 0 0 1-1.23-.79 3.3 3.3 0 0 1-.79-1.22c-.15-.35-.3-.94-.35-1.9-.05-1.1-.06-1.4-.06-4.1s.01-3 .06-4.1c.05-1 .2-1.6.35-1.9.19-.5.42-.85.79-1.23.38-.37.72-.6 1.22-.79.35-.15.94-.3 1.9-.35 1.1-.05 1.4-.06 4.1-.06ZM12 0C9.28 0 8.94.01 7.87.06c-1.07.05-1.8.22-2.44.47-.66.26-1.22.6-1.78 1.16A4.9 4.9 0 0 0 2.5 3.47c-.25.64-.42 1.37-.47 2.44C1.98 6.98 1.97 7.32 1.97 10.05v3.9c0 2.73.01 3.07.06 4.14.05 1.07.22 1.8.47 2.44.26.66.6 1.22 1.16 1.78.56.56 1.12.9 1.78 1.16.64.25 1.37.42 2.44.47 1.07.05 1.4.06 4.12.06s3.05-.01 4.12-.06c1.07-.05 1.8-.22 2.44-.47a4.9 4.9 0 0 0 1.78-1.16 4.9 4.9 0 0 0 1.16-1.78c.25-.64.42-1.37.47-2.44.05-1.07.06-1.4.06-4.14v-3.9c0-2.73-.01-3.07-.06-4.14-.05-1.07-.22-1.8-.47-2.44a4.9 4.9 0 0 0-1.16-1.78A4.9 4.9 0 0 0 18.9.53c-.64-.25-1.37-.42-2.44-.47C15.39.01 15.05 0 12.32 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@scriptguild" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16.6 2h-3.2v13.4a2.9 2.9 0 1 1-2.05-2.77v-3.3a6.16 6.16 0 1 0 5.25 6.09V8.3a7.9 7.9 0 0 0 4.6 1.47V6.6a4.6 4.6 0 0 1-4.6-4.6Z"/></svg>
+    </a>
+    <a href="https://github.com/scriptguild" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.1-.75.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.08 1.84 2.83 1.31 3.52 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.02 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .3Z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@ScriptGuild" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81ZM9.6 15.6V8.4l6.27 3.6-6.27 3.6Z"/></svg>
+    </a>
   </div>
-</section>
+  <p class="footer-note">© <span id="year"></span> ScriptGuild. Built by the guild.</p>
+</footer>
 
-<!-- Marquee -->
-<div class="marquee-strip">
-  <div class="marquee-inner">
-    <span>ScriptGuild</span> · Python · Java · Kotlin · C · Web Dev · Game Dev · Open Source · <span>ScriptGuild CSD</span> · Chronoversa Games · Real Projects · Real People · Volunteer Devs ·
-    <span>ScriptGuild</span> · Python · Java · Kotlin · C · Web Dev · Game Dev · Open Source · <span>ScriptGuild CSD</span> · Chronoversa Games · Real Projects · Real People · Volunteer Devs ·
-  </div>
-</div>
-
-<!-- Why Section -->
-
-  </main>
-
-  <footer>
-    <p>© 2026 ScriptGuild</p>
-  </footer>
-
-  <script>
-    function toggleNav() {
-      document.getElementById('navLinks').classList.toggle('open');
-    }
-  </script>
-  
+<script src="script.js"></script>
 </body>
 </html>
